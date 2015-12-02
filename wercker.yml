@@ -30,6 +30,8 @@ deploy:
      - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
+        cmd: node app.js
+        ports: "5000"
         tag: my-amazing-tag
         repository: mies/node-push
         registry: https://registry.hub.docker.com
