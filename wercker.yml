@@ -32,6 +32,6 @@ deploy:
         password: $PASSWORD
         cmd: node app.js
         ports: "5000"
-        tag: my-amazing-tag
+        tag: latest
         repository: mies/node-push
         registry: https://registry.hub.docker.com
